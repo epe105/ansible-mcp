@@ -19,7 +19,7 @@ HEADERS = {
 # Initialize FastMCP
 mcp = FastMCP("ansible")
 
-async def make_request(url: str, method: str = "GET", json: dict = None) -> Any:
+async def make_request(url: str, method: str = "GET", json: dict = None, verify: bool = False ) -> Any:
     """Helper function to make authenticated API requests to AAP."""
     async with httpx.AsyncClient(verify=False) as client:
         response = await client.request(method, url, headers=HEADERS, json=json)
