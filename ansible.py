@@ -21,7 +21,7 @@ mcp = FastMCP("ansible")
 
 async def make_request(url: str, method: str = "GET", json: dict = None) -> Any:
     """Helper function to make authenticated API requests to AAP."""
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(verify=False) as client:
         response = await client.request(method, url, headers=HEADERS, json=json)
     if response.status_code not in [200, 201]:
         return f"Error {response.status_code}: {response.text}"
