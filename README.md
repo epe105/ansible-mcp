@@ -11,7 +11,7 @@ Ensure you have the following installed.
 ### Required
 - An Ansible Automation Platform (AAP) environment
 - An OpenShift Cluster with OpenShift Virtualization
-- [Claude Desktop](https://claude.ai/download) installed on your laptop (Pro Plan required for best results)
+- [Claude Desktop](https://claude.ai/download) installed on your laptop (Pro Plan required for best results) or HAI
 - Python 3.10 or higher installed on your laptop
 - Ensure you are authenticated with your OpenShift cluster (e.g. exporting kubeconfig)
 
