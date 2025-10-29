@@ -4,6 +4,8 @@
 
 This guide will walk you through setting up the MCP Servers + Claude Desktop portions of the demo that focused on using Claude Desktop to interact with your Ansible Automation Platform and OpenShift Cluster environments. 
 
+The Ansible MCP Server supports only streamable http.
+
 ## Prerequisites
 
 Ensure you have the following installed. 
