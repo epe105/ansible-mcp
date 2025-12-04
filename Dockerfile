@@ -10,10 +10,6 @@ COPY . /app
 # Install dependencies
 RUN pip install --no-cache-dir --upgrade httpx mcp fastmcp
 
-# Set environment variables for runtime (can override in OpenShift)
-ENV AAP_URL="change2"
-ENV AAP_TOKEN="change"
-
 # Expose HTTP port
 EXPOSE 8080
 
